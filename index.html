@@ -12,23 +12,30 @@
   <div class="container">
     <div class="jumbotron">
     </div>
-    <label for="radio"><h3>Toppings</h3></label>
-    <form id="toppings">
-      <div class="form-group">
-        <input type="checkbox" name="toppings" value="relish">  Relish<br>
-        <input type="checkbox" name="toppings" value="bacon">   Bacon<br>
-        <input type="checkbox" name="toppings" value="cheese">  Cheese<br>
-        <input type="checkbox" name="toppings" value="mustard"> Mustard<br>
-        <input type="checkbox" name="toppings" value="ketchup"> Ketchup<br>
-        <input type="checkbox" name="toppings" value="ranch">   Ranch(Do it)<br>
+
+    <form id="toppingsForm">
+      <div class="userChoices">
+        <h2>Toppings</h2>
+        <input type="checkbox" name="toppings" value="Relish">  Relish<br>
+        <input type="checkbox" name="toppings" value="Bacon">   Bacon<br>
+        <input type="checkbox" name="toppings" value="Cheese">  Cheese<br>
+        <input type="checkbox" name="toppings" value="Mustard"> Mustard<br>
+        <input type="checkbox" name="toppings" value="Ketchup"> Ketchup<br>
+        <input type="checkbox" name="toppings" value="Ranch">   Ranch(Do it)<br>
+        <br>
+        <h2>Meat Type</h2>
+        <input type="checkbox" name="toppings" value="Beef"> Beef<br>
+        <input type="checkbox" name="toppings" value="Polish"> Polish<br>
       </div>
+      <br>
+      <br>
      <button type="submit">Submit Order</button>
     </form>
+    <br>
+    <br>
 
-    <br>
-    <br>
-    <div class="userOrder">
-      <label for="userOrder">Your Order</label>
+    <h2>Your Order</h2>
+    <span id="userOrder"></span>
     </div>
   </div>
 </body>
